@@ -1,222 +1,176 @@
+// docs.json (or mint.json depending on your Mintlify version)
+
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Ravan.ai Documentation",
-  "colors": {
-    "primary": "#0066FF",
-    "light": "#0066FF",
-    "dark": "#0066FF"
-  },
-  "favicon": "/assets/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "introduction",
-              "quickstart"
-            ]
-          },
-          {
-            "group": "Getting Started",
-            "pages": [
-              "getting-started/ai-setup-call",
-              "getting-started/dashboard-overview"
-            ]
-          },
-          {
-            "group": "Agents",
-            "pages": [
-              "agents/overview",
-              "agents/web-agent/configuration",
-              "agents/web-agent/embedding",
-              "agents/web-agent/customization",
-              "agents/phone-agents/setup",
-              "agents/phone-agents/outbound-basics",
-              "agents/phone-agents/inbound-handling",
-              "agents/avatar"
-            ]
-          },
-          {
-            "group": "Configuration",
-            "pages": [
-              "configuration/personality-prompts",
-              "configuration/language-voice",
-              "configuration/voice-cloning",
-              "configuration/speech-control",
-              "configuration/guardrails",
-              "configuration/dynamic-variables",
-              "configuration/knowledge-context"
-            ]
-          },
-          {
-            "group": "Conversation Engine",
-            "pages": [
-              "conversation-engine/human-like",
-              "conversation-engine/latency",
-              "conversation-engine/noise-handling",
-              "conversation-engine/interruptions-turntaking",
-              "conversation-engine/sentiment-analysis",
-              "conversation-engine/memory"
-            ]
-          },
-          {
-            "group": "Telephony",
-            "pages": [
-              "telephony/phone-numbers",
-              "telephony/outbound-dialing",
-              "telephony/call-transfer",
-              "telephony/voicemail-detection",
-              "telephony/dtmf",
-              "telephony/branded-caller-id",
-              "telephony/sip-trunking",
-              "telephony/ivr-navigation"
-            ]
-          },
-          {
-            "group": "CRM & Automation",
-            "pages": [
-              "crm-automation/crm-integration",
-              "crm-automation/data-flow",
-              "crm-automation/agentic-crm",
-              "crm-automation/zapier-make",
-              "crm-automation/custom-actions",
-              "crm-automation/webhooks"
-            ]
-          },
-          {
-            "group": "Campaigns & Analytics",
-            "pages": [
-              "campaigns-analytics/outbound-campaigns",
-              "campaigns-analytics/campaign-monitoring",
-              "campaigns-analytics/dashboard-insights",
-              "campaigns-analytics/recordings-transcripts"
-            ]
-          },
-          {
-            "group": "Advanced Features",
-            "pages": [
-              "advanced-features/call-me-back",
-              "advanced-features/email-trigger-calling"
-            ]
-          },
-          {
-            "group": "Account & Billing",
-            "pages": [
-              "account-billing/subscription",
-              "account-billing/pricing-usage",
-              "account-billing/payment-methods",
-              "account-billing/team-management"
-            ]
-          },
-          {
-            "group": "Compliance & Security",
-            "pages": [
-              "compliance-security/security-practices",
-              "compliance-security/soc2",
-              "compliance-security/hipaa",
-              "compliance-security/gdpr"
-            ]
-          },
-          {
-            "group": "Support & Community",
-            "pages": [
-              "support-community/getting-help",
-              "support-community/video-tutorials",
-              "support-community/partner-programs",
-              "support-community/community-showcase"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
+  "name": "Ravan.ai Docs", // Name displayed in the top-left
   "logo": {
-    "dark": "/assets/logo/dark.svg",
-    "light": "/assets/logo/light.svg"
+    "light": "/logo/ravan-ai-logo-light-theme.png", // Provide path to a logo suitable for light bg
+    "dark": "/logo/ravan-ai-logo-dark-theme.png"   // Use the provided logo (assuming it works on dark)
   },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+  "favicon": "/logo/ravan-ai-favicon.png", // Use the square icon as favicon
+  "colors": {
+    "primary": "#FF5722", // Ravan.ai Orange (Adjust if needed)
+    "light": "#FF7043",   // Lighter shade of primary
+    "dark": "#E64A19",    // Darker shade of primary
+    "anchors": {
+      "from": "#FF5722",
+      "to": "#FF8A65"
     }
   },
   "topbarLinks": [
     {
-      "name": "GitHub",
-      "url": "https://github.com/ravan-ai"
+      "name": "Website", // Link to your main marketing site
+      "url": "https://ravan.ai" // Replace with your actual website URL
     }
   ],
-  "topbarCtaButton": {
-    "name": "Get Started",
-    "url": "/quickstart"
-  },
-  "anchors": [
+  // "topbarCtaButton": { // Optional: Add a CTA like "Go to Dashboard"
+  //   "name": "Dashboard",
+  //   "url": "https://app.ravan.ai" // Replace with your app URL
+  // },
+  "anchors": [ // Controls the "On this page" right sidebar
     {
-      "name": "Documentation",
-      "icon": "book",
-      "url": "/introduction"
+      "name": "On This Page",
+      "icon": "list",
+      "default": "true", // Show by default
+      "levels": [ "h2", "h3"] // Show H2 and H3 headings
+    }
+  ],
+  "navigation": [ // This defines the main left sidebar structure
+    {
+      "group": "Introduction",
+      "pages": [
+        "introduction/overview",        // Corresponds to docs/introduction/overview.mdx
+        "introduction/why-ravan-ai",
+        "introduction/use-cases"
+      ]
     },
     {
-      "name": "API Reference",
-      "icon": "code",
-      "url": "/api-reference"
+      "group": "Get Started",
+      "pages": [
+        "getting-started/quick-start",
+        "getting-started/ai-setup-call"
+      ]
+    },
+    {
+      "group": "Your AI Agents",
+      "pages": [
+        "agents/overview",               // Renamed for clarity
+        {
+          "group": "Website Agent",      // Sub-group for neatness
+          "pages": [
+            "agents/web-agent/configuration",
+            "agents/web-agent/embedding",
+            "agents/web-agent/customization"
+          ]
+        },
+        {
+          "group": "Phone Agents",       // Sub-group
+          "pages": [
+            "agents/phone-agents/setup",
+            "agents/phone-agents/outbound-basics",
+            "agents/phone-agents/inbound-handling"
+          ]
+        },
+        "agents/agent-appearance"        // Covers Avatars, Branding
+      ]
+    },
+    {
+      "group": "Agent Configuration", // More specific than "Intelligence"
+      "pages": [
+        "configuration/personality-prompts",
+        "configuration/language-voice",
+        "configuration/voice-cloning",
+        "configuration/speech-control",
+        "configuration/guardrails",
+        "configuration/dynamic-variables",
+        "configuration/knowledge-context" // How context works post-setup
+      ]
+    },
+    {
+      "group": "Conversation Engine",
+      "pages": [
+        "conversation-engine/voice-quality", // Renamed for focus
+        "conversation-engine/intelligence-flow",
+        "conversation-engine/noise-handling",
+        "conversation-engine/memory-context"
+      ]
+    },
+    {
+      "group": "Integrations & Automation",
+      "pages": [
+        "integrations/crm-integration",
+        "integrations/telephony-setup",    // Grouping telephony config here
+        "integrations/agentic-crm",
+        "integrations/calendar-integration",
+        "integrations/webhooks-zapier-make",
+        "integrations/custom-actions"      // How to request them
+      ]
+    },
+    {
+      "group": "Campaigns & Analytics",
+      "pages": [
+        "campaigns-analytics/outbound-campaigns",
+        "campaigns-analytics/inbound-call-handling", // Moved operational aspect here
+        "campaigns-analytics/analytics-dashboard",
+        "campaigns-analytics/recordings-transcripts"
+      ]
+    },
+    {
+        "group": "Advanced Capabilities", // Renamed from "Features"
+        "pages": [
+          "advanced-capabilities/call-me-back",
+          "advanced-capabilities/email-trigger-calling",
+          "advanced-capabilities/ivr-navigation",
+          "advanced-capabilities/telephony-features" // Specific telephony actions like transfer, DTMF etc.
+        ]
+      },
+    {
+      "group": "Tutorials & Guides",
+      "pages": [
+        "tutorials/automate-appointment-booking",
+        "tutorials/run-lead-follow-up-campaign",
+        "tutorials/setup-website-support",
+        "tutorials/best-practices"
+      ]
+    },
+    {
+      "group": "Account & Compliance",
+      "pages": [
+        "account/billing-usage",
+        "account/team-management",
+        "account/security-overview",
+        "account/compliance-center" // Link to SOC2, HIPAA, GDPR pages/sections
+      ]
+    },
+    // Mimicking Play AI's bottom external links
+    {
+      "group": "Resources", // Group name for the external links section
+      "pages": [
+          {
+              "name": "Pricing", // No "API" prefix needed for Ravan
+              "url": "https://ravan.ai/pricing", // Replace with actual URL
+              "external": true
+          },
+          {
+              "name": "Community (Discord)",
+              "url": "#", // Replace with your Discord invite link
+              "external": true
+          },
+          {
+              "name": "Support",
+              "url": "mailto:support@ravan.ai", // Or link to support page
+              "external": true
+          },
+          {
+              "name": "Website",
+              "url": "https://ravan.ai", // Replace with your actual website URL
+              "external": true
+          }
+      ]
     }
-  ]
+  ],
+  "footerSocials": { // Add your actual social links
+    "twitter": "https://twitter.com/RavanAI",
+    "linkedin": "https://linkedin.com/company/RavanAI"
+    // Add others like github if applicable
+  }
 }
