@@ -1,0 +1,222 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Ravan.ai Documentation",
+  "colors": {
+    "primary": "#0066FF",
+    "light": "#0066FF",
+    "dark": "#0066FF"
+  },
+  "favicon": "/assets/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Getting Started",
+            "pages": [
+              "getting-started/ai-setup-call",
+              "getting-started/dashboard-overview"
+            ]
+          },
+          {
+            "group": "Agents",
+            "pages": [
+              "agents/overview",
+              "agents/web-agent/configuration",
+              "agents/web-agent/embedding",
+              "agents/web-agent/customization",
+              "agents/phone-agents/setup",
+              "agents/phone-agents/outbound-basics",
+              "agents/phone-agents/inbound-handling",
+              "agents/avatar"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/personality-prompts",
+              "configuration/language-voice",
+              "configuration/voice-cloning",
+              "configuration/speech-control",
+              "configuration/guardrails",
+              "configuration/dynamic-variables",
+              "configuration/knowledge-context"
+            ]
+          },
+          {
+            "group": "Conversation Engine",
+            "pages": [
+              "conversation-engine/human-like",
+              "conversation-engine/latency",
+              "conversation-engine/noise-handling",
+              "conversation-engine/interruptions-turntaking",
+              "conversation-engine/sentiment-analysis",
+              "conversation-engine/memory"
+            ]
+          },
+          {
+            "group": "Telephony",
+            "pages": [
+              "telephony/phone-numbers",
+              "telephony/outbound-dialing",
+              "telephony/call-transfer",
+              "telephony/voicemail-detection",
+              "telephony/dtmf",
+              "telephony/branded-caller-id",
+              "telephony/sip-trunking",
+              "telephony/ivr-navigation"
+            ]
+          },
+          {
+            "group": "CRM & Automation",
+            "pages": [
+              "crm-automation/crm-integration",
+              "crm-automation/data-flow",
+              "crm-automation/agentic-crm",
+              "crm-automation/zapier-make",
+              "crm-automation/custom-actions",
+              "crm-automation/webhooks"
+            ]
+          },
+          {
+            "group": "Campaigns & Analytics",
+            "pages": [
+              "campaigns-analytics/outbound-campaigns",
+              "campaigns-analytics/campaign-monitoring",
+              "campaigns-analytics/dashboard-insights",
+              "campaigns-analytics/recordings-transcripts"
+            ]
+          },
+          {
+            "group": "Advanced Features",
+            "pages": [
+              "advanced-features/call-me-back",
+              "advanced-features/email-trigger-calling"
+            ]
+          },
+          {
+            "group": "Account & Billing",
+            "pages": [
+              "account-billing/subscription",
+              "account-billing/pricing-usage",
+              "account-billing/payment-methods",
+              "account-billing/team-management"
+            ]
+          },
+          {
+            "group": "Compliance & Security",
+            "pages": [
+              "compliance-security/security-practices",
+              "compliance-security/soc2",
+              "compliance-security/hipaa",
+              "compliance-security/gdpr"
+            ]
+          },
+          {
+            "group": "Support & Community",
+            "pages": [
+              "support-community/getting-help",
+              "support-community/video-tutorials",
+              "support-community/partner-programs",
+              "support-community/community-showcase"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "API Documentation",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          },
+          {
+            "group": "Endpoint Examples",
+            "pages": [
+              "api-reference/endpoint/get",
+              "api-reference/endpoint/create",
+              "api-reference/endpoint/delete",
+              "api-reference/endpoint/webhook"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Documentation",
+          "href": "https://mintlify.com/docs",
+          "icon": "book-open-cover"
+        },
+        {
+          "anchor": "Community",
+          "href": "https://mintlify.com/community",
+          "icon": "slack"
+        },
+        {
+          "anchor": "Blog",
+          "href": "https://mintlify.com/blog",
+          "icon": "newspaper"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "dark": "/assets/logo/dark.svg",
+    "light": "/assets/logo/light.svg"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:hi@mintlify.com"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://dashboard.mintlify.com"
+    }
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/mintlify",
+      "github": "https://github.com/mintlify",
+      "linkedin": "https://linkedin.com/company/mintlify"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/ravan-ai"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Get Started",
+    "url": "/quickstart"
+  },
+  "anchors": [
+    {
+      "name": "Documentation",
+      "icon": "book",
+      "url": "/introduction"
+    },
+    {
+      "name": "API Reference",
+      "icon": "code",
+      "url": "/api-reference"
+    }
+  ]
+}
