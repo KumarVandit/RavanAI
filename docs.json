@@ -1,168 +1,168 @@
 {
-  "name": "Ravan.ai Docs",
+  "name": "Ravan.ai",
   "logo": {
-    "light": "/logo/ravan-ai-logo-light-theme.png",
-    "dark": "/logo/ravan-ai-logo-dark-theme.png"
+    "light": "/logo/ravan-logo-light.png",
+    "dark": "/logo/ravan-logo-dark.png"
   },
-  "favicon": "/logo/ravan-ai-favicon.png",
+  "favicon": "/favicon.png",
   "colors": {
     "primary": "#FF5722",
     "light": "#FF7043",
     "dark": "#E64A19",
     "anchors": {
       "from": "#FF5722",
-      "to": "#FF8A65"
+      "to": "#FF7043"
     }
   },
   "topbarLinks": [
     {
-      "name": "Website",
-      "url": "https://ravan.ai"
+      "name": "Support",
+      "url": "mailto:support@ravan.ai"
     }
   ],
+  "topbarCtaButton": {
+    "name": "Dashboard Login",
+    "url": "https://app.ravan.ai"
+  },
   "anchors": [
     {
-      "name": "On This Page",
-      "icon": "list",
-      "default": "true",
-      "levels": [ "h2", "h3"]
+      "name": "Community",
+      "icon": "discord",
+      "url": "https://discord.gg/yourlink"
+    },
+    {
+      "name": "Website",
+      "icon": "globe",
+      "url": "https://ravan.ai"
     }
   ],
   "navigation": [
     {
-      "group": "Introduction",
+      "group": "Get Started",
+      "icon": "rocket",
       "pages": [
         "introduction/overview",
-        "introduction/why-ravan-ai",
-        "introduction/use-cases"
-      ]
-    },
-    {
-      "group": "Get Started",
-      "pages": [
+        "introduction/use-cases",
         "getting-started/quick-start",
         "getting-started/ai-setup-call"
       ]
     },
     {
-      "group": "Your AI Agents",
+      "group": "AI Agents",
+      "icon": "robot",
       "pages": [
-        "agents/overview",
-        {
-          "group": "Website Agent",
-          "pages": [
-            "agents/web-agent/configuration",
-            "agents/web-agent/embedding",
-            "agents/web-agent/customization"
-          ]
-        },
-        {
-          "group": "Phone Agents",
-          "pages": [
-            "agents/phone-agents/setup",
-            "agents/phone-agents/outbound-basics",
-            "agents/phone-agents/inbound-handling"
-          ]
-        },
-        "agents/agent-appearance"
+        "agents/introduction",
+        "agents/agent-types",
+        "agents/agent-templates",
+        "agents/agent-management"
       ]
     },
     {
       "group": "Agent Configuration",
+      "icon": "sliders",
       "pages": [
+        "configuration/llm-voice-selection",
         "configuration/personality-prompts",
-        "configuration/language-voice",
-        "configuration/voice-cloning",
-        "configuration/speech-control",
-        "configuration/guardrails",
-        "configuration/dynamic-variables",
-        "configuration/knowledge-context"
+        "configuration/speech-settings",
+        "configuration/call-settings",
+        "configuration/interruption-guardrails",
+        "configuration/reminder-settings"
       ]
     },
     {
       "group": "Conversation Engine",
+      "icon": "brain-circuit",
       "pages": [
-        "conversation-engine/voice-quality",
-        "conversation-engine/intelligence-flow",
+        "conversation-engine/human-like-voice",
+        "conversation-engine/low-latency",
         "conversation-engine/noise-handling",
-        "conversation-engine/memory-context"
+        "conversation-engine/memory-context",
+        "conversation-engine/sentiment-analysis",
+        "conversation-engine/language-support"
+      ]
+    },
+    {
+      "group": "Telephony Features",
+      "icon": "phone-volume",
+      "pages": [
+        "telephony/introduction",
+        "telephony/number-management",
+        "telephony/sip-trunking",
+        "telephony/call-transfer",
+        "telephony/voicemail-dtmf",
+        "telephony/ivr-navigation",
+        "telephony/branded-caller-id"
       ]
     },
     {
       "group": "Integrations & Automation",
+      "icon": "link",
       "pages": [
-        "integrations/crm-integration",
-        "integrations/telephony-setup",
+        "integrations/introduction",
+        "integrations/crm-sync",
+        "integrations/calendar-booking",
+        "integrations/webhooks",
         "integrations/agentic-crm",
-        "integrations/calendar-integration",
-        "integrations/webhooks-zapier-make",
-        "integrations/custom-actions"
+        "integrations/zapier-make"
       ]
     },
     {
       "group": "Campaigns & Analytics",
+      "icon": "chart-line",
       "pages": [
+        "campaigns-analytics/introduction",
+        "campaigns-analytics/contact-management",
         "campaigns-analytics/outbound-campaigns",
-        "campaigns-analytics/inbound-call-handling",
+        "campaigns-analytics/inbound-campaigns",
         "campaigns-analytics/analytics-dashboard",
-        "campaigns-analytics/recordings-transcripts"
+        "campaigns-analytics/call-details"
       ]
     },
     {
-        "group": "Advanced Capabilities",
-        "pages": [
-          "advanced-capabilities/call-me-back",
-          "advanced-capabilities/email-trigger-calling",
-          "advanced-capabilities/ivr-navigation",
-          "advanced-capabilities/telephony-features"
-        ]
-      },
+      "group": "Advanced Features",
+      "icon": "star",
+      "pages": [
+        "advanced-features/call-me-back",
+        "advanced-features/email-trigger-calling"
+      ]
+    },
     {
       "group": "Tutorials & Guides",
+      "icon": "book-open-cover",
       "pages": [
-        "tutorials/automate-appointment-booking",
-        "tutorials/run-lead-follow-up-campaign",
-        "tutorials/setup-website-support",
+        "tutorials/setup-inbound-support",
         "tutorials/best-practices"
       ]
     },
     {
-      "group": "Account & Compliance",
+      "group": "Account",
+      "icon": "user-gear",
       "pages": [
         "account/billing-usage",
-        "account/team-management",
-        "account/security-overview",
-        "account/compliance-center"
+        "account/payment-methods",
+        "account/team-management"
+      ]
+    },
+    {
+      "group": "Compliance & Security",
+      "icon": "shield-check",
+      "pages": [
+        "compliance-security/security-overview",
+        "compliance-security/compliance-center"
       ]
     },
     {
       "group": "Resources",
+      "icon": "life-ring",
       "pages": [
-          {
-              "name": "Pricing",
-              "url": "https://ravan.ai/pricing",
-              "external": true
-          },
-          {
-              "name": "Community (Discord)",
-              "url": "#",
-              "external": true
-          },
-          {
-              "name": "Support",
-              "url": "mailto:support@ravan.ai",
-              "external": true
-          },
-          {
-              "name": "Website",
-              "url": "https://ravan.ai",
-              "external": true
-          }
+        "resources/getting-help",
+        "resources/developer-hub",
+        "resources/partner-programs"
       ]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/RavanAI",
-    "linkedin": "https://linkedin.com/company/RavanAI"
+    "discord": "https://discord.gg/yourlink",
+    "linkedin": "https://linkedin.com/company/yourcompany"
   }
 }
